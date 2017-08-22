@@ -28,7 +28,7 @@ describe('vendingMachine', () => {
     })
     it('should not dispense the item if value is < item cost', () => {
       const received = vendor.dispenseItem(0.50, 'nutts');
-      expect(received).toEqual('Insufficient cash, bitch.')
+      expect(received).toEqual('Insufficient cash.')
     })
     it('should not dispense if item is out of stock', () => {
       const received = vendor.dispenseItem(4.00, 'cookies');
